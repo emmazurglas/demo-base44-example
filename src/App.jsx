@@ -57,8 +57,7 @@ function App() {
           </h1>
           
           <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Transform your ideas into reality with our cutting-edge platform. 
-            Fast, secure, and incredibly powerful.
+            Transform your ideas into reality with our cutting-edge platform.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
