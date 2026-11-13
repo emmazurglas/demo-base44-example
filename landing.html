@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Build something people love, faster</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: [
+              'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont',
+              'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'
+            ],
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans antialiased">
+    <main>
+      <section
+        class="flex min-h-screen items-center justify-center bg-gradient-to-br from-slate-900 via-indigo-900 to-violet-800 px-4 py-20 sm:px-6 lg:px-8"
+        aria-labelledby="hero-heading"
+      >
+        <div class="mx-auto flex max-w-3xl flex-col items-center text-center">
+          <p
+            class="mb-6 inline-flex items-center rounded-full border border-indigo-300/30 bg-white/10 px-4 py-1.5 text-sm font-medium text-indigo-100"
+          >
+            New &mdash; now in public beta
+          </p>
+
+          <h1
+            id="hero-heading"
+            class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-7xl"
+          >
+            Build something people love, faster
+          </h1>
+
+          <p class="mt-6 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg lg:text-xl">
+            Turn your ideas into polished products in record time. Everything you need to design,
+            launch, and grow &mdash; without the busywork.
+          </p>
+
+          <div class="mt-10 flex w-full flex-col items-center gap-4 sm:w-auto sm:flex-row sm:gap-6">
+            <a
+              href="#"
+              class="w-full rounded-xl bg-white px-6 py-3 text-base font-semibold text-indigo-900 shadow-lg transition hover:bg-indigo-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto"
+            >
+              Get started
+            </a>
+            <a
+              href="#"
+              class="rounded-md px-2 py-1 text-base font-semibold text-white transition hover:text-indigo-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+            >
+              Learn more <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
