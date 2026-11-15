@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>demo-base44-example</title>
+    <meta name="description" content="demo-base44-example, a demo static site styled with Tailwind CSS.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: [
+              'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont',
+              'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'
+            ],
+          },
+        },
+      };
+    </script>
+    <script src="home.js" defer></script>
+  </head>
+  <body id="top" class="relative font-sans antialiased">
+    <header class="absolute inset-x-0 top-0 z-10">
+      <nav aria-label="Main" class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-4 sm:px-6 lg:px-8">
+        <a
+          href="#top"
+          id="brand-link"
+          class="rounded-md px-1 py-1 text-base font-bold tracking-tight text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+        >
+          demo-base44-example
+        </a>
+        <button
+          id="nav-toggle"
+          type="button"
+          class="inline-flex items-center justify-center rounded-md p-2 text-white transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:hidden"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+        >
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <div id="nav-menu" class="hidden w-full rounded-xl bg-slate-900/90 p-2 sm:block sm:w-auto sm:bg-transparent sm:p-0">
+          <ul class="flex flex-col gap-y-1 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-2">
+            <li><a href="#what-it-does" class="rounded-md px-2 py-1 text-sm font-medium text-slate-200 transition hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">What it does</a></li>
+            <li><a href="#faq" class="rounded-md px-2 py-1 text-sm font-medium text-slate-200 transition hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">FAQ</a></li>
+            <li><a href="landing.html" class="rounded-md px-2 py-1 text-sm font-medium text-slate-200 transition hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Landing page</a></li>
+            <li><a href="about.html" class="rounded-md px-2 py-1 text-sm font-medium text-slate-200 transition hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="flex min-h-screen items-center justify-center bg-gradient-to-br from-slate-900 via-indigo-900 to-violet-800 px-4 py-20 sm:px-6 lg:px-8"
+        aria-labelledby="hero-heading"
+      >
+        <div class="mx-auto flex max-w-3xl flex-col items-center text-center">
+          <h1 id="hero-heading" class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-7xl">
+            demo-base44-example
+          </h1>
+          <p class="mt-6 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg lg:text-xl">
+            A demo static site. Project details coming soon.
+          </p>
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+            <!-- TODO: replace with the real sign-up / product URL -->
+            <a
+              href="landing.html"
+              class="inline-block rounded-xl bg-indigo-600 px-6 py-3 text-base font-semibold text-white shadow-lg transition hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Get started
+            </a>
+            <a
+              href="#what-it-does"
+              class="inline-block rounded-xl border border-white/30 px-6 py-3 text-base font-semibold text-white transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Learn more
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="what-it-does" class="bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8" aria-labelledby="what-heading">
+        <div class="mx-auto max-w-5xl">
+          <h2 id="what-heading" class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">What it does</h2>
+          <p class="mt-4 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
+            More details are coming soon.
+          </p>
+          <!-- TODO: replace with real features once known -->
+          <ul class="mt-10 grid gap-6 sm:grid-cols-3">
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+              <h3 class="text-lg font-semibold text-indigo-900">Feature one</h3>
+              <p class="mt-2 text-base leading-relaxed text-slate-600">Details coming soon.</p>
+            </li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+              <h3 class="text-lg font-semibold text-indigo-900">Feature two</h3>
+              <p class="mt-2 text-base leading-relaxed text-slate-600">Details coming soon.</p>
+            </li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+              <h3 class="text-lg font-semibold text-indigo-900">Feature three</h3>
+              <p class="mt-2 text-base leading-relaxed text-slate-600">Details coming soon.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="faq" class="bg-slate-50 px-4 py-16 sm:px-6 sm:py-20 lg:px-8" aria-labelledby="faq-heading">
+        <div class="mx-auto max-w-3xl">
+          <h2 id="faq-heading" class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">FAQ</h2>
+          <!-- TODO: replace with real FAQ content, project description and contact details -->
+          <div class="mt-8 space-y-4">
+            <div class="rounded-2xl border border-slate-200 bg-white">
+              <h3>
+                <button
+                  type="button"
+                  id="faq-button-1"
+                  class="faq-button flex w-full items-center justify-between gap-4 rounded-2xl px-6 py-4 text-left text-base font-semibold text-slate-900 transition hover:text-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-1"
+                >
+                  <span>What is this project?</span>
+                  <span aria-hidden="true" class="text-indigo-600">+</span>
+                </button>
+              </h3>
+              <div id="faq-panel-1" role="region" aria-labelledby="faq-button-1" class="px-6 pb-5 text-base leading-relaxed text-slate-600" hidden>
+                A demo static site styled with Tailwind CSS. A fuller description is coming soon.
+              </div>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white">
+              <h3>
+                <button
+                  type="button"
+                  id="faq-button-2"
+                  class="faq-button flex w-full items-center justify-between gap-4 rounded-2xl px-6 py-4 text-left text-base font-semibold text-slate-900 transition hover:text-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-2"
+                >
+                  <span>Where can I learn more?</span>
+                  <span aria-hidden="true" class="text-indigo-600">+</span>
+                </button>
+              </h3>
+              <div id="faq-panel-2" role="region" aria-labelledby="faq-button-2" class="px-6 pb-5 text-base leading-relaxed text-slate-600" hidden>
+                See the
+                <a
+                  href="about.html"
+                  class="rounded-md font-semibold text-indigo-700 underline underline-offset-4 transition hover:text-indigo-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-indigo-600"
+                >About page</a>.
+              </div>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white">
+              <h3>
+                <button
+                  type="button"
+                  id="faq-button-3"
+                  class="faq-button flex w-full items-center justify-between gap-4 rounded-2xl px-6 py-4 text-left text-base font-semibold text-slate-900 transition hover:text-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-3"
+                >
+                  <span>How do I get in touch?</span>
+                  <span aria-hidden="true" class="text-indigo-600">+</span>
+                </button>
+              </h3>
+              <div id="faq-panel-3" role="region" aria-labelledby="faq-button-3" class="px-6 pb-5 text-base leading-relaxed text-slate-600" hidden>
+                Contact details are coming soon.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white px-4 py-16 text-center sm:px-6 sm:py-20 lg:px-8" aria-labelledby="cta-heading">
+        <div class="mx-auto max-w-2xl">
+          <h2 id="cta-heading" class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Explore the site</h2>
+          <p class="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
+            Find out more about the project or visit the landing page.
+          </p>
+          <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+            <a
+              href="about.html"
+              class="inline-block rounded-xl bg-indigo-600 px-6 py-3 text-base font-semibold text-white shadow-lg transition hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              About the project
+            </a>
+            <a
+              href="landing.html"
+              class="inline-block rounded-xl border border-indigo-600 px-6 py-3 text-base font-semibold text-indigo-700 transition hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Landing page
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+        <p class="text-base font-bold text-slate-900">demo-base44-example</p>
+        <nav aria-label="Footer">
+          <ul class="flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium">
+            <li><a href="index.html" aria-current="page" class="rounded-md px-1 py-0.5 text-slate-600 transition hover:text-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Home</a></li>
+            <li><a href="landing.html" class="rounded-md px-1 py-0.5 text-slate-600 transition hover:text-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Landing page</a></li>
+            <li><a href="about.html" class="rounded-md px-1 py-0.5 text-slate-600 transition hover:text-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">About</a></li>
+          </ul>
+        </nav>
+        <p class="text-sm text-slate-500">&copy; 2026 demo-base44-example</p>
+      </div>
+    </footer>
+
+    <button
+      id="back-to-top"
+      type="button"
+      class="hidden fixed bottom-6 right-6 z-20 rounded-full bg-indigo-600 p-3 text-white shadow-lg transition hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+      aria-label="Back to top"
+    >
+      <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+      </svg>
+    </button>
+  </body>
+</html>
